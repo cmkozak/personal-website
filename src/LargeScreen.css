@@ -1,0 +1,205 @@
+aside {
+    display: inline-block;
+    width: 33.3vw;
+}
+
+.name-main {
+    color: rgb(243, 243, 243);
+    display: inline;
+    font-size: 40px;
+    margin-left: 4px;
+}
+
+.contact-picture {
+    width: 32px;
+}
+
+main {
+    display: inline-block;
+}
+
+.main-active {
+    height: 100vh;
+    width: 66vw;
+    position: fixed;
+    top: 0;
+    margin-left: 10px;
+    background-color: #0B0c10; /* rgb(34, 40, 46) */
+}
+
+.main-active p {
+    color: rgb(209, 209, 209);
+    margin-left: 30px;
+}
+
+.main-active h1 {
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #08fdd8;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.main-active * {
+    background-color: #0B0c10;
+}
+
+@keyframes change {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 66.7vw;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes change2 {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 66.7vw;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+#transition {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top:0;
+    z-index: 1;
+    left: inherit;
+    overflow-x: hidden;
+    margin-left: 5px;
+    border-right: 6px solid white;
+}
+
+.transition1 {
+    animation: 1.5s change;
+}
+
+.transition2 {
+    animation: 1.5s change2;
+}
+
+.text-delay1 *{
+    animation: .75s delay-text;
+}
+
+.text-delay2 *{
+    animation: .75s delay-text2;
+}
+
+@keyframes delay-text {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes delay-text2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-main  h1{
+    font-size: 60px;
+    margin-left: 35%;
+}
+
+.about-main p {
+    width: 50%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.about-main img {
+    width: 20vw;
+    float: right;
+    margin-right: 12vw;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.skills-main h1 {
+    font-size: 60px;
+    margin-left: 35%;
+}
+
+.work-head {
+    font-size: 24px;
+    color: rgb(151, 207, 193) !important;
+}
+
+.work {
+    font-size: 20px;
+    float: left;
+}
+
+.programming-skills-head {
+    font-weight: bold;
+    font-size: 37px !important;
+    margin-left: 21% !important;
+    position: fixed;
+}
+
+.programming-skills {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 20% !important;
+    margin-top: 100px;
+    color: rgb(209, 209, 209);
+    list-style-type: none;
+}
+
+.skills-box p {
+    font-size: 20px;
+}
+
+.info {
+    margin-top: 100px;
+    font-size: 14px;
+}
+
+.skills-info {
+    width: 50%;
+}
+
+.intro  h1{
+    margin-top: 21%;
+    margin-left: 20%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+
+.projects-main  h1{
+    font-size: 60px;
+    margin-left: 35%;
+}
+
+#project-screen div {
+    width: 650px;
+}

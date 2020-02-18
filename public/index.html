@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Michael Kozak</title>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=1280, initial-scale=1">
+  </head>
+  <body>
+    <aside>
+      <head>
+          <h1 class="name-main">Michael Kozak</h1>
+          <a href="https://github.com/cmkozak" target="_blank"><img src="GitHub-Mark-Light-64px.png" class="contact-picture" style="display: inline;margin-left:10px;"></a>
+          <a href="https://www.linkedin.com/in/charlesmichaelkozak/" target="_blank"><img src="80786_linkedin-logo-white-png.png" class="contact-picture"/></a>
+          <a href="mailto:charlesmichaelk@gmail.com" target="_blank"><img src="email.png" class="contact-picture"/></a>
+          <a href="https://docs.google.com/document/d/1ggZys3WpinWR53gihvgWKtQV0h0J7jTj-uZ9OQi0sQA/edit?usp=sharing" target="_blank"><img src="download.png" class="contact-picture"/></a>
+      </head>
+      <p id="mainText">Software Developer</p>
+      <p id="mainText2">Little Rock, Arkansas</p>
+      <div id="side-sections">
+
+      </div>
+  </aside>
+    <main>
+      <div id = "project-screen">
+
+      </div>
+      <div id="transition">
+
+      </div>
+      <div id="root" class="main-active">
+          
+      </div>
+    </main>
+    <script>
+      var limit = 1000;
+      var ww = window.innerWidth;
+
+      function refresh(){
+        ww = window.innerWidth;
+        if(ww > 415){
+          var w = ww<limit ? (location.reload(true)) : ( ww > limit ? (location.reload(true)) : ww=limit);
+        }
+      }
+
+      addEventListener("resize", function() {
+        var resW = window.innerWidth;
+        if( (ww>limit && resW<limit) || (ww<limit && resW>limit) && resW > 415){
+          refresh();
+        }
+      });
+    </script>
+  </body>
+</html>

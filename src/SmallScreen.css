@@ -1,0 +1,87 @@
+.name-main {
+    color: rgb(243, 243, 243);
+    display: inline;
+    font-size: 40px;
+    margin-left: 4px;
+}
+
+#mainText {
+    margin-top: 10vh !important;
+    font-size: 30px !important;
+}
+
+.contact-picture {
+    width: 37px;
+}
+
+.about-main {
+    display: none;
+    background-color: #0B0c10;
+}
+
+.about-main * {
+    background-color: #0B0c10;
+    color: rgb(209, 209, 209);
+}
+
+.about-internal {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    align-content: center;
+}
+
+.about-main img {
+    display: none;
+}
+
+.skills-main {
+    display: none;
+    background-color: #0B0c10;
+}
+
+.skills-main * {
+    background-color: #0B0c10;
+    color: rgb(209, 209, 209);
+}
+
+.skills-internal {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    align-content: center;
+}
+
+.programming-skills-head {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projects-main {
+    display: none;
+    background-color: #0B0c10;
+    margin-bottom: 50px;
+}
+
+.projects-main * {
+    background-color: #0B0c10;
+    color: rgb(209, 209, 209);
+}
+
+.projects-internal {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#project-information {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#project-screen div {
+    width: 90%;
+}
