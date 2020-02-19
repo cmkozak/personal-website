@@ -90,7 +90,7 @@ aside a {
 }
 
 #sectionText img {
-  opacity: 20%;
+  opacity: 0.2;
   position: absolute;
   width: 50px;
   margin-top: -5px;
@@ -99,7 +99,7 @@ aside a {
 
 .active-img  img {
   animation: 1s spin;
-  opacity: 0% !important;
+  opacity: 0 !important;
 }
 
 .active-tab {
@@ -124,7 +124,7 @@ aside a {
 
 .active-img-reverse img {
   animation: 1s spin-rev;
-  opacity: 20% !important;
+  opacity: 0.2 !important;
 }
 
 @keyframes tab-fade {
@@ -138,17 +138,17 @@ aside a {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); opacity: 20%; background-color: rgb(233, 233, 233);}
+  0% { transform: rotate(0deg); opacity: 0.2; background-color: rgb(233, 233, 233);}
   100% { transform: rotate(360deg); opacity: 0; background-color: rgb(110, 110, 110);}
 }
 
 @keyframes spin-rev {
-  100% { transform: rotate(0deg); opacity: 20%; background-color: rgb(233, 233, 233);}
+  100% { transform: rotate(0deg); opacity: 0.2; background-color: rgb(233, 233, 233);}
   0% { transform: rotate(360deg); opacity: 0; background-color: rgb(110, 110, 110);}
 }
 
 .programming-skills ul {
-  counter-reset: index;  
+  counter-reset: index;
   padding: 0;
   max-width: 300px;
 }
@@ -324,4 +324,8 @@ h3 {
   margin-top: 0px !important;
   padding-top: 0px !important;
   padding-bottom: 20px;
+}
+
+.contact-picture {
+  padding-left: 3px;
 }

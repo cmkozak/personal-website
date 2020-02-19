@@ -246,8 +246,8 @@ class MainScreen extends React.Component {
                     return (
                         <React.Fragment>
                             <div>
-                                <img src="plus-white.png" className="exitButton" id="exit"/>
-                                <img src="website-picture.PNG" className="card-project-img"/>
+                                <img src="plus-white.png" className="exitButton" id="exit" alt="Exit Button"/>
+                                <img src="website-picture.PNG" className="card-project-img" alt="Website Picture"/>
                                 <h3>Personal Website</h3>
                                 <div class="tags">
                                     <p>HTML</p>
@@ -262,7 +262,7 @@ class MainScreen extends React.Component {
                                 </a>
                                 <div className="project-info">
                                     <p>With this portfolio website, I wanted to gain some knowledge on React and Javascript by creating a single page website that features a large amount of animations and transitions.</p>
-                                    <p>Before starting this website I have never used React before but I knew that I wanted to make my portfolio interactive so I started learning React a few months prior to creating this website. While I'm still not great at React I'm learning more and more everyday.</p>
+                                    <p>Before starting this website I had never used React before but I knew that I wanted to make my portfolio interactive so I started learning React a few months prior to creating this website. While I'm still not great at React I'm learning more and more everyday.</p>
                                     <p>What you see now is not a finished project. As I learn more about Javascript and it's frameworks, I'll push out new updates here and on Github.</p>
                                 </div>
                             </div>
@@ -285,7 +285,7 @@ class MainScreen extends React.Component {
                             <h1>About Me</h1>
                             <p>I’ve always been interested in video games. Just like any kid I played way too much Call of Duty and Halo growing up.</p>
                             <img src="/headshot.jpg" />
-                            <p>That gaming passion (more like an addiction) lead me to start watching YouTubers and Twitch streamers which lead me to gain a passion for videography and editing.</p>
+                            <p>That gaming passion (more like an addiction) led me to start watching YouTubers and Twitch streamers which lead me to gain a passion for videography and editing.</p>
                             <p>In 2014 I took my interest in videography to the next level by uploading gaming videos and live streaming to Twitch. However I’m too embarrassed to release them so a mystery they will remain.</p>
                             <p>However in 2016 I learned about programming and instantly was attached to it. I then dropped videography to pursue the world of coding.</p>
                             <p>It took me a while to get into programming, it started with just building a basic website, which then moved to Object Oriented languages but never pursued it too heavily.</p>
@@ -335,7 +335,7 @@ class MainScreen extends React.Component {
                         <div className="intro">
                             <h1>Welcome to my website!</h1>
                             <p>Click on the tabs to the left to explore the site.</p>
-                            <p>If you want to contaxt me, the links to my social media are on the top left of the screen.</p>
+                            <p>If you want to contact me, the links to my social media are on the top left of the screen.</p>
                         </div>
                     </React.Fragment>
                 );
