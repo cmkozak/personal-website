@@ -4,69 +4,72 @@ import ReactDOM from 'react-dom';
 
 class Sections extends React.Component{
     aboutMe() {
-        if(document.getElementById("plus-a").parentElement.classList.contains("active-img")){
-            document.getElementById("plus-a").parentElement.classList.remove("active-img");
-            document.getElementById("plus-a").parentElement.classList.add("active-img-reverse");
-            document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab");
-            document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab-reverse");
+        const plusaElem = document.getElementById("plus-a").parentElement;
+        const plussElem = document.getElementById("plus-s").parentElement;
+        const pluspElem = document.getElementById("plus-p").parentElement;
+        if(plusaElem.classList.contains("active-img")){
+            plusaElem.classList.remove("active-img");
+            plusaElem.classList.add("active-img-reverse");
+            plusaElem.parentElement.classList.remove("active-tab");
+            plusaElem.parentElement.classList.add("active-tab-reverse");
             ReactDOM.render(<MainScreen dataFromParent= ""/>,document.getElementById("root"));
             activateTransition();
-        }else if(document.getElementById("plus-a").parentElement.classList.contains("active-img-reverse")){
-            if(document.getElementById("plus-s").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-s").parentElement.classList.remove("active-img");
-                document.getElementById("plus-s").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.classList.add("active-img");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab");
+        }else if(plusaElem.classList.contains("active-img-reverse")){
+            if(plussElem.classList.contains("active-img")){
+                plussElem.classList.remove("active-img");
+                plussElem.classList.add("active-img-reverse");
+                plussElem.parentElement.classList.remove("active-tab");
+                plussElem.parentElement.classList.add("active-tab-reverse");
+                plusaElem.classList.remove("active-img-reverse");
+                plusaElem.parentElement.classList.remove("active-tab-reverse");
+                plusaElem.classList.add("active-img");
+                plusaElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "about"/>,document.getElementById("root"));
                 activateTransition();
-            }else if(document.getElementById("plus-p").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-p").parentElement.classList.remove("active-img");
-                document.getElementById("plus-p").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.classList.add("active-img");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab");
+            }else if(pluspElem.classList.contains("active-img")){
+                pluspElem.classList.remove("active-img");
+                pluspElem.classList.add("active-img-reverse");
+                pluspElem.parentElement.classList.remove("active-tab");
+                pluspElem.parentElement.classList.add("active-tab-reverse");
+                plusaElem.classList.remove("active-img-reverse");
+                plusaElem.parentElement.classList.remove("active-tab-reverse");
+                plusaElem.classList.add("active-img");
+                plusaElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "about"/>,document.getElementById("root"));
                 activateTransition();
             }
             else{
-                document.getElementById("plus-a").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-a").parentElement.classList.add("active-img");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab");
+                plusaElem.classList.remove("active-img-reverse");
+                plusaElem.classList.add("active-img");
+                plusaElem.parentElement.classList.remove("active-tab-reverse");
+                plusaElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "about"/>,document.getElementById("root"));
                 activateTransition();
             }
         }
         else{
-            if(document.getElementById("plus-s").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-s").parentElement.classList.remove("active-img");
-                document.getElementById("plus-s").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.classList.add("active-img");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab");
+            if(plussElem.classList.contains("active-img")){
+                plussElem.classList.remove("active-img");
+                plussElem.classList.add("active-img-reverse");
+                plussElem.parentElement.classList.remove("active-tab");
+                plussElem.parentElement.classList.add("active-tab-reverse");
+                plusaElem.classList.add("active-img");
+                plusaElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "about"/>,document.getElementById("root"));
                 activateTransition();
-            }else if(document.getElementById("plus-p").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-p").parentElement.classList.remove("active-img");
-                document.getElementById("plus-p").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-a").parentElement.classList.add("active-img");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab");
+            }else if(pluspElem.classList.contains("active-img")){
+                pluspElem.classList.remove("active-img");
+                pluspElem.classList.add("active-img-reverse");
+                pluspElem.parentElement.classList.remove("active-tab");
+                pluspElem.parentElement.classList.add("active-tab-reverse");
+                plusaElem.classList.add("active-img");
+                plusaElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "about"/>,document.getElementById("root"));
                 activateTransition();
             }
             else {
-                document.getElementById("plus-a").parentElement.classList.add("active-img");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab");
+                plusaElem.classList.add("active-img");
+                plusaElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "about"/>,document.getElementById("root"));
                 activateTransition();
             }
@@ -74,67 +77,70 @@ class Sections extends React.Component{
     }
 
     skills() {
-        if(document.getElementById("plus-s").parentElement.classList.contains("active-img")){
-            document.getElementById("plus-s").parentElement.classList.remove("active-img");
-            document.getElementById("plus-s").parentElement.classList.add("active-img-reverse");
-            document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab");
-            document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab-reverse");
+        const plusaElem = document.getElementById("plus-a").parentElement;
+        const plussElem = document.getElementById("plus-s").parentElement;
+        const pluspElem = document.getElementById("plus-p").parentElement;
+        if(plussElem.classList.contains("active-img")){
+            plussElem.classList.remove("active-img");
+            plussElem.classList.add("active-img-reverse");
+            plussElem.parentElement.classList.remove("active-tab");
+            plussElem.parentElement.classList.add("active-tab-reverse");
             ReactDOM.render(<MainScreen dataFromParent= ""/>,document.getElementById("root"));
             activateTransition();
-        }else if(document.getElementById("plus-s").parentElement.classList.contains("active-img-reverse")){
-            if(document.getElementById("plus-a").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-a").parentElement.classList.remove("active-img");
-                document.getElementById("plus-a").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.classList.add("active-img");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab");
+        }else if(plussElem.classList.contains("active-img-reverse")){
+            if(plusaElem.classList.contains("active-img")){
+                plusaElem.classList.remove("active-img");
+                plusaElem.classList.add("active-img-reverse");
+                plusaElem.parentElement.classList.remove("active-tab");
+                plusaElem.parentElement.classList.add("active-tab-reverse");
+                plussElem.classList.remove("active-img-reverse");
+                plussElem.parentElement.classList.remove("active-tab-reverse");
+                plussElem.classList.add("active-img");
+                plussElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "skills"/>,document.getElementById("root"));
                 activateTransition();
-            }else if(document.getElementById("plus-p").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-p").parentElement.classList.remove("active-img");
-                document.getElementById("plus-p").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.classList.add("active-img");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab");
+            }else if(pluspElem.classList.contains("active-img")){
+                pluspElem.classList.remove("active-img");
+                pluspElem.classList.add("active-img-reverse");
+                pluspElem.parentElement.classList.remove("active-tab");
+                pluspElem.parentElement.classList.add("active-tab-reverse");
+                plussElem.classList.remove("active-img-reverse");
+                plussElem.parentElement.classList.remove("active-tab-reverse");
+                plussElem.classList.add("active-img");
+                plussElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "skills"/>,document.getElementById("root"));
                 activateTransition();
             }else {
-                document.getElementById("plus-s").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-s").parentElement.classList.add("active-img");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab");
+                plussElem.classList.remove("active-img-reverse");
+                plussElem.classList.add("active-img");
+                plussElem.parentElement.classList.remove("active-tab-reverse");
+                plussElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "skills"/>,document.getElementById("root"));
                 activateTransition();
             }
         }
         else{
-            if(document.getElementById("plus-a").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-a").parentElement.classList.remove("active-img");
-                document.getElementById("plus-a").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.classList.add("active-img");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab");
+            if(plusaElem.classList.contains("active-img")){
+                plusaElem.classList.remove("active-img");
+                plusaElem.classList.add("active-img-reverse");
+                plusaElem.parentElement.classList.remove("active-tab");
+                plusaElem.parentElement.classList.add("active-tab-reverse");
+                plussElem.classList.add("active-img");
+                plussElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "skills"/>,document.getElementById("root"));
                 activateTransition();
-            }else if(document.getElementById("plus-p").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-p").parentElement.classList.remove("active-img");
-                document.getElementById("plus-p").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-s").parentElement.classList.add("active-img");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab");
+            }else if(pluspElem.classList.contains("active-img")){
+                pluspElem.classList.remove("active-img");
+                pluspElem.classList.add("active-img-reverse");
+                pluspElem.parentElement.classList.remove("active-tab");
+                pluspElem.parentElement.classList.add("active-tab-reverse");
+                plussElem.classList.add("active-img");
+                plussElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "skills"/>,document.getElementById("root"));
                 activateTransition();
             }else {
-                document.getElementById("plus-s").parentElement.classList.add("active-img");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab");
+                plussElem.classList.add("active-img");
+                plussElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "skills"/>,document.getElementById("root"));
                 activateTransition();
             }
@@ -142,67 +148,70 @@ class Sections extends React.Component{
     }
 
     projects() {
-        if(document.getElementById("plus-p").parentElement.classList.contains("active-img")){
-            document.getElementById("plus-p").parentElement.classList.remove("active-img");
-            document.getElementById("plus-p").parentElement.classList.add("active-img-reverse");
-            document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab");
-            document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab-reverse");
+        const plusaElem = document.getElementById("plus-a").parentElement;
+        const plussElem = document.getElementById("plus-s").parentElement;
+        const pluspElem = document.getElementById("plus-p").parentElement;
+        if(pluspElem.classList.contains("active-img")){
+            pluspElem.classList.remove("active-img");
+            pluspElem.classList.add("active-img-reverse");
+            pluspElem.parentElement.classList.remove("active-tab");
+            pluspElem.parentElement.classList.add("active-tab-reverse");
             ReactDOM.render(<MainScreen dataFromParent= ""/>,document.getElementById("root"));
             activateTransition();
-        }else if(document.getElementById("plus-p").parentElement.classList.contains("active-img-reverse")){
-            if(document.getElementById("plus-a").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-a").parentElement.classList.remove("active-img");
-                document.getElementById("plus-a").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.classList.add("active-img");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab");
+        }else if(pluspElem.classList.contains("active-img-reverse")){
+            if(plusaElem.classList.contains("active-img")){
+                plusaElem.classList.remove("active-img");
+                plusaElem.classList.add("active-img-reverse");
+                plusaElem.parentElement.classList.remove("active-tab");
+                plusaElem.parentElement.classList.add("active-tab-reverse");
+                pluspElem.classList.remove("active-img-reverse");
+                pluspElem.parentElement.classList.remove("active-tab-reverse");
+                pluspElem.classList.add("active-img");
+                pluspElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "projects"/>,document.getElementById("root"));
                 activateTransition();
-            }else if(document.getElementById("plus-s").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-s").parentElement.classList.remove("active-img");
-                document.getElementById("plus-s").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.classList.add("active-img");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab");
+            }else if(plussElem.classList.contains("active-img")){
+                plussElem.classList.remove("active-img");
+                plussElem.classList.add("active-img-reverse");
+                plussElem.parentElement.classList.remove("active-tab");
+                plussElem.parentElement.classList.add("active-tab-reverse");
+                pluspElem.classList.remove("active-img-reverse");
+                pluspElem.parentElement.classList.remove("active-tab-reverse");
+                pluspElem.classList.add("active-img");
+                pluspElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "projects"/>,document.getElementById("root"));
                 activateTransition();
             }else {
-                document.getElementById("plus-p").parentElement.classList.remove("active-img-reverse");
-                document.getElementById("plus-p").parentElement.classList.add("active-img");
-                document.getElementById("plus-p").parentElement.parentElement.classList.remove("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab");
+                pluspElem.classList.remove("active-img-reverse");
+                pluspElem.classList.add("active-img");
+                pluspElem.parentElement.classList.remove("active-tab-reverse");
+                pluspElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "projects"/>,document.getElementById("root"));
                 activateTransition();
             }
         }
         else{
-            if(document.getElementById("plus-a").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-a").parentElement.classList.remove("active-img");
-                document.getElementById("plus-a").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-a").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-a").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.classList.add("active-img");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab");
+            if(plusaElem.classList.contains("active-img")){
+                plusaElem.classList.remove("active-img");
+                plusaElem.classList.add("active-img-reverse");
+                plusaElem.parentElement.classList.remove("active-tab");
+                plusaElem.parentElement.classList.add("active-tab-reverse");
+                pluspElem.classList.add("active-img");
+                pluspElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "projects"/>,document.getElementById("root"));
                 activateTransition();
-            }else if(document.getElementById("plus-s").parentElement.classList.contains("active-img")){
-                document.getElementById("plus-s").parentElement.classList.remove("active-img");
-                document.getElementById("plus-s").parentElement.classList.add("active-img-reverse");
-                document.getElementById("plus-s").parentElement.parentElement.classList.remove("active-tab");
-                document.getElementById("plus-s").parentElement.parentElement.classList.add("active-tab-reverse");
-                document.getElementById("plus-p").parentElement.classList.add("active-img");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab");
+            }else if(plussElem.classList.contains("active-img")){
+                plussElem.classList.remove("active-img");
+                plussElem.classList.add("active-img-reverse");
+                plussElem.parentElement.classList.remove("active-tab");
+                plussElem.parentElement.classList.add("active-tab-reverse");
+                pluspElem.classList.add("active-img");
+                pluspElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "projects"/>,document.getElementById("root"));
                 activateTransition();
             }else {
-                document.getElementById("plus-p").parentElement.classList.add("active-img");
-                document.getElementById("plus-p").parentElement.parentElement.classList.add("active-tab");
+                pluspElem.classList.add("active-img");
+                pluspElem.parentElement.classList.add("active-tab");
                 ReactDOM.render(<MainScreen dataFromParent= "projects"/>,document.getElementById("root"));
                 activateTransition();
             }
@@ -268,6 +277,39 @@ class MainScreen extends React.Component {
                             </div>
                         </React.Fragment>
                     )
+                case "2":
+                    return(
+                        <React.Fragment>
+                            <div>
+                                <img src="plus-white.png" className="exitButton" id="exit" alt="Exit Button"/>
+                                <img src="currency-project-picture.PNG" className="card-project-img" alt="Currency Website Picture"/>
+                                <h3>Currency Converter Website</h3>
+                                <div class="tags">
+                                    <p>HTML</p>
+                                    <p>CSS</p>
+                                    <p>Javascript</p>
+                                    <p>API</p>
+                                </div>
+                                <a href="https://github.com/cmkozak/currency-converter" target="_blank">
+                                    <div className="github-view">
+                                        <p>View on Github</p>
+                                        <img src="GitHub-Mark-Light-32px.png" />
+                                    </div>
+                                </a>
+                                <a href="project-currency/currency.html" target="_blank">
+                                    <div className="live-demo-view">
+                                        <p>View Live Demo</p>
+                                        <img src="live-red-button.png" />
+                                    </div>
+                                </a>
+                                <div className="project-info">
+                                    <p>I created this project mostly to familiarize myself with using HTTP GET requests. Creating a simple single-page website that converts from 12 different currencies types to many different currencies used all over the world.</p>
+                                    <p>The website I use to get the information from is <a href="http://www.floatrates.com/json-feeds.html">http://www.floatrates.com/json-feeds.html</a> which offers free currency converters from many different countries updated daily.</p>
+                                    <p>The project doesn’t look very pretty and I didn’t spend a lot of time on the design parts of it. I mostly just wanted to quickly throw some design together and get used to utilizing API requests. In the future, I want to clean up the website to look more appealing.</p>
+                                </div>
+                            </div>
+                        </React.Fragment>
+                    )
                 default:
                     return;
             }
@@ -325,6 +367,10 @@ class MainScreen extends React.Component {
                             <div className="card" onClick={this.addProject.bind(this, "1")}>
                                 <img src="/website-picture.PNG"/>
                                 <p>Personal Website</p>
+                            </div>
+                            <div className="card" onClick={this.addProject.bind(this, "2")}>
+                                <img src="/currency-project-picture.PNG"/>
+                                <p>Currency Converter</p>
                             </div>
                         </div>
                     </React.Fragment>

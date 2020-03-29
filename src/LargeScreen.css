@@ -163,12 +163,10 @@ main {
     font-weight: bold;
     font-size: 37px !important;
     margin-left: 21% !important;
-    position: fixed;
 }
 
 .programming-skills {
     font-size: 20px;
-    position: fixed;
     margin-left: 20% !important;
     margin-top: 100px;
     color: rgb(209, 209, 209);
